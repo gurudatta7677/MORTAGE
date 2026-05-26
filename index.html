@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Markets Research - GitHub Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1E3A5F 0%, #2E5090 100%);
+            color: #2C3E50;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 12px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #1E3A5F;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #6C757D;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #185FA5;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #1E3A5F;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(24, 95, 165, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #185FA5;
+            border: 2px solid #185FA5;
+        }
+        
+        .btn-secondary:hover {
+            background: #F8F9FA;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1E3A5F;
+        }
+        
+        .feature-card p {
+            font-size: 14px;
+            color: #6C757D;
+            line-height: 1.6;
+        }
+        
+        .emoji {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        
+        .stats {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-item {
+            border-right: 1px solid #E9ECEF;
+        }
+        
+        .stat-item:last-child {
+            border-right: none;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #185FA5;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #6C757D;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .about {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+        
+        .about h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #1E3A5F;
+        }
+        
+        .about p {
+            font-size: 15px;
+            color: #2C3E50;
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .footer p {
+            font-size: 13px;
+            color: #6C757D;
+            margin: 5px 0;
+        }
+        
+        .footer a {
+            color: #185FA5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid #E9ECEF;
+                padding-bottom: 20px;
+            }
+            
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>💼 Mortgage Markets Research</h1>
+            <p><strong>Singapore | UAE | India</strong><br>8-Month Intensive Study of Housing Finance & Macroprudential Policy</p>
+            
+            <div class="cta-buttons">
+                <a href="./dashboard.html" class="btn btn-primary">📊 View Interactive Dashboard</a>
+                <a href="./README.md" class="btn btn-secondary">📖 Read Full Research</a>
+                <a href="./PRESENTATION.md" class="btn btn-secondary">🎯 View Presentation</a>
+            </div>
+        </div>
+        
+        <!-- Key Stats -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">36</div>
+                <div class="stat-label">Annual Observations</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Years of Data</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Countries Analyzed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Months Research</div>
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="emoji">📊</div>
+                <h3>Interactive Dashboard</h3>
+                <p>Real-time visualizations of mortgage markets, asset quality, and household leverage trends.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="emoji">🎯</div>
+                <h3>Policy Recommendations</h3>
+                <p>Evidence-based insights for regulators in Singapore (MAS), UAE (CBUAE), and India (RBI).</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="emoji">📈</div>
+                <h3>Comparative Analysis</h3>
+                <p>Cross-country framework examining regulatory effectiveness and market structure differences.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="emoji">💡</div>
+                <h3>Strategic Insights</h3>
+                <p>Key findings on institutional maturity, regulatory timing, and housing price volatility.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="emoji">🔬</div>
+                <h3>Rigorous Methodology</h3>
+                <p>Mixed-methods approach using Tier-1 sources (World Bank, IMF, BIS, Central Banks).</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="emoji">🚀</div>
+                <h3>Actionable Output</h3>
+                <p>Specific, implementation-ready recommendations for each market's unique challenges.</p>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <div class="about">
+            <h2>Research Overview</h2>
+            <p>
+                <strong>Question:</strong> How do different regulatory frameworks and market structures impact housing finance stability and growth across diverse economies?
+            </p>
+            <p>
+                <strong>Scope:</strong> Comparative analysis of Singapore, UAE, and India mortgage markets (2013–2024), examining market depth, regulatory effectiveness, asset quality, and household leverage.
+            </p>
+            <p>
+                <strong>Key Findings:</strong>
+            </p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Singapore's 46.9% Mortgage-to-GDP reflects institutional maturity, not just regulation</li>
+                <li>UAE's rapid growth (7% → 16%) shows vulnerability to external shocks but improving stability</li>
+                <li>India faces critical regulatory gap: no formal DSTI cap despite 8%+ credit growth</li>
+                <li>Timing of regulation matters as much as content (UAE's proactive 2013 measures prevented 2008 repeat)</li>
+                <li>Housing price volatility is diagnostic of structural fragility (UAE 10.8% vs India 1.1%)</li>
+            </ul>
+            <p>
+                <strong>Impact:</strong> Policy makers, bankers, and researchers can use this evidence-based comparative framework to make informed decisions on macroprudential policy and housing finance regulation.
+            </p>
+        </div>
+        
+        <!-- Quick Access Links -->
+        <div style="background: white; border-radius: 10px; padding: 30px; margin: 40px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: #1E3A5F; margin-bottom: 20px;">📚 Quick Access</h3>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 10px;"><a href="./dashboard.html" style="color: #185FA5; text-decoration: none; font-weight: 500;">→ Interactive Dashboard</a> - Real-time metrics and charts</li>
+                <li style="margin-bottom: 10px;"><a href="./README.md" style="color: #185FA5; text-decoration: none; font-weight: 500;">→ Full Research README</a> - Complete findings and methodology</li>
+                <li style="margin-bottom: 10px;"><a href="./PRESENTATION.md" style="color: #185FA5; text-decoration: none; font-weight: 500;">→ 15-Minute Presentation</a> - Slide-by-slide overview</li>
+                <li style="margin-bottom: 10px;"><a href="./data.json" style="color: #185FA5; text-decoration: none; font-weight: 500;">→ Research Data (JSON)</a> - Structured dataset for analysis</li>
+                <li style="margin-bottom: 10px;"><a href="./package.json" style="color: #185FA5; text-decoration: none; font-weight: 500;">→ Project Metadata</a> - Package and project details</li>
+            </ul>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Author:</strong> Gururaj MS | <strong>Academic Project:</strong> Comparative Housing Finance Research</p>
+            <p><a href="https://github.com/[username]/mortgage-markets-research">View on GitHub</a> | <a href="mailto:your.email@example.com">Get in Touch</a></p>
+            <p>Data Sources: World Bank, IMF, BIS, Central Banks (MAS, CBUAE, RBI)</p>
+            <p style="margin-top: 15px; font-size: 12px;">Last Updated: May 26, 2025 | Designed for GitHub Pages</p>
+        </div>
+    </div>
+</body>
+</html>

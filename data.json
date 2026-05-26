@@ -1,0 +1,275 @@
+{
+  "research": {
+    "title": "Comparative Study of Mortgage Markets",
+    "subtitle": "Singapore, UAE & India: 2013–2024 Analysis",
+    "period": "2013-2024",
+    "duration_months": 8,
+    "observations": 36,
+    "methodology": "Mixed-methods (quantitative + policy analysis)",
+    "sources": [
+      "World Bank Financial Development Database",
+      "IMF Financial Access Survey",
+      "BIS CGFS Papers",
+      "Central Bank Publications (MAS, CBUAE, RBI)"
+    ]
+  },
+  "countries": [
+    {
+      "name": "Singapore",
+      "code": "SG",
+      "color": "#185FA5",
+      "emoji": "🇸🇬"
+    },
+    {
+      "name": "UAE",
+      "code": "AE",
+      "color": "#BA7517",
+      "emoji": "🇦🇪"
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "color": "#639922",
+      "emoji": "🇮🇳"
+    }
+  ],
+  "metrics_2024": {
+    "mortgage_to_gdp": {
+      "singapore": 46.9,
+      "uae": 16.2,
+      "india": 11.1,
+      "unit": "% of GDP",
+      "description": "Outstanding residential mortgage loans as % of national GDP"
+    },
+    "npl_ratio": {
+      "singapore": 0.3,
+      "uae": 3.0,
+      "india": 1.5,
+      "unit": "%",
+      "description": "Non-performing loan ratio (loans >90 days in arrears)"
+    },
+    "hh_debt_to_income": {
+      "singapore": 111,
+      "uae": 25,
+      "india": 36,
+      "unit": "%",
+      "description": "Household total debt as % of disposable income"
+    },
+    "hpi_volatility": {
+      "singapore": 4.2,
+      "uae": 10.8,
+      "india": 1.1,
+      "unit": "% (std dev 2013-2024)",
+      "description": "Standard deviation of annual housing price index growth"
+    }
+  },
+  "regulatory_framework": {
+    "singapore": {
+      "ltv_cap": "75%",
+      "dsti_tdsr": "55% (TDSR)",
+      "fiscal_tools": "ABSD (up to 60% for foreign buyers)",
+      "key_policies": ["Total Debt Service Ratio", "Loan-to-Value Cap", "Additional Buyer Stamp Duty"],
+      "npL_2024": "0.3%",
+      "risk_level": "Low",
+      "summary": "Multi-layered macroprudential approach with inter-agency coordination"
+    },
+    "uae": {
+      "ltv_cap": "80-85% (nationals), 80% (expats)",
+      "dsti_tdsr": "50-60% DBR (Debt Burden Ratio)",
+      "fiscal_tools": "None",
+      "key_policies": ["Loan-to-Value Cap", "Debt Burden Ratio", "Maximum 25-year tenure"],
+      "npl_2024": "3.0%",
+      "risk_level": "Moderate",
+      "summary": "2013 regulations introduced post-Dubai crisis; improving effectiveness"
+    },
+    "india": {
+      "ltv_cap": "~80% (informal practice)",
+      "dsti_tdsr": "None - CRITICAL GAP (IMF recommends 50%)",
+      "fiscal_tools": "None",
+      "key_policies": ["Risk-weighted capital requirements", "Priority sector lending targets"],
+      "npl_2024": "1.5%",
+      "risk_level": "Emerging",
+      "summary": "Indirect controls via risk-weights; no formal borrower-based limit"
+    }
+  },
+  "historical_data": {
+    "mortgage_to_gdp_trend": {
+      "year": [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+      "singapore": [46.9, 47.1, 47.3, 47.2, 47.5, 47.6, 47.7, 47.4, 47.1, 47.0, 47.0, 46.9],
+      "uae": [7.4, 7.8, 8.6, 9.2, 10.1, 11.2, 12.5, 13.1, 14.2, 15.0, 15.8, 16.2],
+      "india": [5.9, 6.3, 6.8, 7.2, 7.6, 8.0, 8.4, 8.9, 9.5, 10.2, 10.8, 11.1]
+    },
+    "npl_ratio_trend": {
+      "year": [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+      "singapore": [0.42, 0.38, 0.35, 0.33, 0.32, 0.31, 0.30, 0.29, 0.28, 0.28, 0.28, 0.3],
+      "uae": [5.1, 5.0, 4.8, 7.4, 6.5, 5.8, 4.2, 6.1, 4.8, 4.0, 3.5, 3.0],
+      "india": [2.8, 2.6, 2.4, 2.3, 2.2, 2.0, 1.8, 1.9, 1.7, 1.6, 1.5, 1.5]
+    },
+    "hpi_growth_rate": {
+      "year": [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+      "singapore": [8.4, 6.8, -0.5, -5.2, -0.4, 1.2, 3.6, 1.9, 10.6, -2.1, 6.8, 3.9],
+      "uae": [17.4, 8.2, -8.5, -12.5, -1.2, 2.8, 4.5, -3.2, 8.9, 22.5, 12.3, 16.9],
+      "india": [4.2, 5.1, 3.8, 2.9, 4.5, 6.2, 5.8, 3.1, 5.5, 4.9, 6.1, 5.2]
+    }
+  },
+  "key_findings": [
+    {
+      "title": "Market Depth Disparities",
+      "description": "Singapore's mortgage market is 4-8x larger relative to GDP. Market depth driven by institutional maturity, not LTV strictness alone.",
+      "countries": ["SG", "AE", "IN"]
+    },
+    {
+      "title": "Regulatory Effectiveness",
+      "description": "Singapore's multi-layered approach (TDSR + LTV + ABSD) most effective. UAE regulations working (NPL: 6.1% → 3.0%). India needs formal DSTI cap.",
+      "countries": ["SG", "AE", "IN"]
+    },
+    {
+      "title": "Household Leverage Trajectories",
+      "description": "Singapore 111% (stable, well-buffered). UAE 25% (rising 1%/year). India 36% (moderate but invisible cumulative risk).",
+      "countries": ["SG", "AE", "IN"]
+    },
+    {
+      "title": "Housing Price Volatility",
+      "description": "UAE 10.8% std dev (volatile, oil-sensitive). Singapore 4.2% (policy-managed). India 1.1% (stable, demand-driven).",
+      "countries": ["SG", "AE", "IN"]
+    },
+    {
+      "title": "Institutional Maturity > Regulation Strictness",
+      "description": "Singapore's deep market works despite tight LTV due to public housing + savings culture + infrastructure. India's shallow market reflects weak institutions, not loose LTV.",
+      "countries": ["SG", "IN"]
+    },
+    {
+      "title": "Timing of Regulation Matters",
+      "description": "UAE's 2013 regulations (pre-boom) prevented 2008 crash repeat. Lesson: India needs DSTI cap NOW, before next credit boom.",
+      "countries": ["AE", "IN"]
+    }
+  ],
+  "recommendations": {
+    "singapore": [
+      "Maintain TDSR at 55%",
+      "Monitor HDB-to-private spillover (resale flats +9.7% in 2024)",
+      "Refine ABSD by residency periodically",
+      "Incorporate climate risk into mortgage stress tests"
+    ],
+    "uae": [
+      "Proactively recalibrate DBR ahead of rate cuts (US peg effect)",
+      "Strengthen investment property LTV if mortgage growth >1% p.a.",
+      "Expand credit bureau coverage for fintech + all borrower types",
+      "Enforce off-plan LTV limits (50% cap) in high-growth segments"
+    ],
+    "india": [
+      "Implement 50% DSTI cap across all housing lenders (CRITICAL)",
+      "Accelerate SARFAESI foreclosure law reform",
+      "Develop mortgage-backed securities (MBS) market",
+      "Fixed-rate mortgage incentives for affordable housing"
+    ]
+  },
+  "insights": {
+    "insight_1": {
+      "title": "Institutional Maturity > Regulation Strictness",
+      "key_point": "Singapore's 46.9% M/GDP + 75% LTV works because of public housing, CPF savings, mature infrastructure. India's 11.1% + informal 80% LTV fails because institutions missing.",
+      "lesson": "Can't copy regulations without building foundational infrastructure first."
+    },
+    "insight_2": {
+      "title": "Timing of Regulation Matters as Much as Content",
+      "key_point": "UAE introduced LTV/DBR in 2013 BEFORE boom accelerated. This allowed them to manage growth while preventing 2008 crisis repeat.",
+      "lesson": "India should implement DSTI cap NOW, not after next stress emerges."
+    },
+    "insight_3": {
+      "title": "HPI Volatility = Structural Fragility Indicator",
+      "key_point": "UAE's 10.8% volatility reveals oil/expat sensitivity. Singapore's 4.2% shows policy cushioning. India's 1.1% shows stable fundamentals.",
+      "lesson": "Volatility tells you what risks to monitor; what external shocks matter."
+    },
+    "insight_4": {
+      "title": "Institutional Infrastructure Must Precede Credit Expansion",
+      "key_point": "Correct sequence: credit bureaus → foreclosure laws → DSTI limits → deep markets. Wrong sequence (Dubai 2007): rapid credit → no safeguards → collapse.",
+      "lesson": "India at critical juncture. Build institutions now, deepen credit later."
+    }
+  },
+  "risk_assessment": {
+    "singapore": {
+      "risk_level": "Low",
+      "main_risks": [
+        "Speculative froth in high-end properties",
+        "HDB resale price spillover to private market",
+        "Demographic aging (long-term challenge)"
+      ],
+      "mitigation": "Maintain TDSR, monitor spillover, refine ABSD"
+    },
+    "uae": {
+      "risk_level": "Moderate",
+      "main_risks": [
+        "Boom-bust cycles (oil/expat sensitive)",
+        "Rising household leverage (1% p.a. increase)",
+        "Potential demand spike from rate easing"
+      ],
+      "mitigation": "Proactive DBR recalibration, expand credit coverage, enforce LTV limits"
+    },
+    "india": {
+      "risk_level": "Emerging",
+      "main_risks": [
+        "Regulatory arbitrage (no DSTI cap)",
+        "Cumulative household leverage unmonitored",
+        "Potential over-extension if credit accelerates"
+      ],
+      "mitigation": "Urgent: implement 50% DSTI cap, foreclosure reform, build MBS market"
+    }
+  },
+  "sources": {
+    "quantitative": [
+      {
+        "source": "World Bank Financial Development Database",
+        "data": ["Mortgage-to-GDP ratios", "Market penetration metrics"]
+      },
+      {
+        "source": "BIS Statistics & CGFS Papers",
+        "data": ["LTV caps", "Regulatory comparisons", "Household debt metrics"]
+      },
+      {
+        "source": "IMF Financial Access Survey & Working Papers",
+        "data": ["Interest rates", "Financial inclusion", "Policy recommendations"]
+      },
+      {
+        "source": "Central Banks (MAS, CBUAE, RBI)",
+        "data": ["NPL ratios", "Financial stability reviews", "Policy details"]
+      }
+    ],
+    "qualitative": [
+      {
+        "source": "MAS Financial Stability Reviews (2025)",
+        "coverage": "Singapore mortgage market, TDSR effectiveness"
+      },
+      {
+        "source": "CBUAE Financial Stability Report (2025)",
+        "coverage": "UAE regulation evolution, DBR impact"
+      },
+      {
+        "source": "RBI Financial Sector Assessment Program (2025)",
+        "coverage": "India regulatory gaps, DSTI recommendation"
+      },
+      {
+        "source": "Government Policy Documents",
+        "coverage": ["HDB (Singapore)", "PMAY (India)", "Vision 2030 (UAE)"]
+      }
+    ]
+  },
+  "limitations": [
+    "Data comparability: Definitions vary by jurisdiction (all cross-validated)",
+    "Lack of microdata: Country-aggregate level, not borrower-level analysis",
+    "Limited causal analysis: Correlations and patterns, not econometric causality",
+    "3-country scope: Findings not tested on other ASEAN/GCC markets"
+  ],
+  "future_research": [
+    "Panel regression analysis (fixed-effects model) on full dataset",
+    "Stress test simulations (rate shock, HPI decline, income drop)",
+    "Expand to Malaysia, Saudi Arabia for regional comparison",
+    "Qualitative interviews with regulators and bankers",
+    "Green mortgage trends (ESG-linked mortgages) analysis"
+  ],
+  "metadata": {
+    "last_updated": "2025-05-26",
+    "version": "1.0",
+    "status": "Complete",
+    "author": "Gururaj MS"
+  }
+}

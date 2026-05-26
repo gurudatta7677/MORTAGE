@@ -1,0 +1,41 @@
+{
+  "name": "mortgage-markets-research",
+  "version": "1.0.0",
+  "description": "Comparative study of mortgage markets in Singapore, UAE, and India (2013-2024). 8-month research project with interactive dashboard and policy recommendations.",
+  "author": "Gururaj MS",
+  "license": "Educational Use",
+  "keywords": [
+    "mortgage-markets",
+    "housing-finance",
+    "macroprudential-policy",
+    "financial-stability",
+    "comparative-analysis",
+    "singapore",
+    "uae",
+    "india",
+    "research",
+    "dashboard"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[username]/mortgage-markets-research"
+  },
+  "homepage": "https://[username].github.io/mortgage-markets-research",
+  "files": [
+    "dashboard.html",
+    "README.md",
+    "PRESENTATION.md",
+    "data.json",
+    "index.html"
+  ],
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Dashboard is static HTML - no build required'",
+    "deploy": "git add . && git commit -m 'Update research content' && git push origin main"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
